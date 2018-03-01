@@ -1,0 +1,94 @@
+.layui-elem-quote {
+    margin-top: 75px;
+    padding: 8px;
+}
+
+.layui-breadcrumb a cite {}
+
+.block-index:hover {
+    color: #1E9FFF;
+}
+
+.shadows {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.layui-elem-quote .layui-breadcrumb {
+    padding: 10px;
+}
+
+.search-keywords {
+    width: 82%;
+    float: left;
+}
+
+.search-submit {
+    float: right;
+    width: 15%;
+    margin-right: 5px;
+    height: 38px;
+    line-height: 38px;
+    background: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.layui-icon-searchs {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.blogerSearch {
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+.artical-category {
+    background: #fff;
+    padding-bottom: 15px;
+}
+
+.artical-category .artical-category-title {
+    text-align: center;
+    border-bottom: 1px solid #009688;
+    font-size: 15px;
+    padding: 5px;
+    margin: 0 12px;
+}
+
+.artical-category-context {
+    margin-top: 10px;
+}
+
+.artical-category-context a {
+    display: inline-block;
+    border: 1px solid #d2d2d2;
+    margin-right: 10px;
+}
+
+@media (min-width:992px) {
+    .layui-elem-quote {
+        width: 1170px;
+        margin: 0 auto;
+        margin-top: 75px;
+        background: #fff;
+        height: 25px;
+        line-height: 25px;
+    }
+    .artical-category-context a {
+        display: inline-block;
+        border: 1px solid #d2d2d2;
+        margin-right: 10px;
+        text-align: center;
+        float: left;
+        width: 46%;
+        height: 30px;
+        line-height: 30px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    .artical-category-context a:hover {
+        border: 1px solid #5FB878;
+        color: #5FB878;
+    }
+}

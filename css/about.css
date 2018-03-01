@@ -1,0 +1,36 @@
+.layui-tab-title {
+    border-bottom: 1px solid #5FB878;
+    text-align: center;
+}
+
+.aboutinfo-figure {
+    text-align: center;
+}
+
+.aboutinfor-intruduce {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 17px;
+}
+
+.aboutinfo-contact {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.aboutinfo-contact a {
+    margin: 0 15px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    margin-bottom:15px;
+}
+
+fieldset legend {
+    text-align: center;
+    font-size: 20px;
+}

@@ -1,0 +1,187 @@
+.nav-child {}
+
+.layui-elem-quote {
+    margin-top: 75px;
+    padding: 8px;
+}
+
+.nav-child-time {
+    background: #5FB878;
+    color: #fff;
+    padding: 9px 20px;
+    cursor: pointer;
+}
+
+.timeline-box {
+    background: #fff;
+    padding: 15px;
+    color: #009688;
+}
+
+.blog-container {
+    margin-bottom: 15px;
+}
+
+.timeline-h1 {
+    margin-left: 251px;
+}
+
+.timeline-box .timeline-main {
+    /* position: relative; */
+    /* z-index: 11; */
+    font-size: 20px;
+}
+
+.timeline-year {
+    margin: 10px;
+}
+
+.timeline-year>h2 {
+    width: 18%;
+    text-align: right;
+}
+
+.timeline-month ul li {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.timeline-month>h3 {
+    width: 20%;
+    text-align: right;
+}
+
+.timeline-month>h4 {
+    width: 23%;
+    text-align: right;
+    float: left;
+}
+
+.timeline-month>li>p {
+    margin-right: 15px;
+}
+
+.timeline-line {
+    position: absolute;
+    height: 69%;
+    width: 2px;
+    z-index: 0;
+    top: 20%;
+    left: 24.3%;
+    background: #009688;
+}
+
+.yearToggle {
+    font-size: 30px;
+    color: #1E9FFF;
+}
+
+.yearToggle:hover {
+    color: #1E9FFF !important;
+}
+
+.yearToggle>i {
+    font-size: 35px;
+    margin-left: -10px;
+}
+
+.monthToggle {
+    font-size: 24px;
+    color: #FF5722;
+}
+
+.monthToggle:hover {
+    color: #FF5722 !important;
+}
+
+.monthToggle>i {
+    font-size: 30px;
+    color: #FF5722;
+    margin-left: -10px;
+}
+
+h1>i {
+    position: relative;
+    z-index: 23;
+    width: 38px;
+    height: 45px;
+    background: white;
+    margin-left: 1px;
+}
+
+.timeline-h4 .timeline-p .timeline-text {
+    display: inline-block;
+    float: right;
+}
+
+.timeline-h4 {
+    width: 22%;
+    display: inline-block;
+    text-align: right;
+}
+
+.timeline-h4 .data {
+    display: inline-block;
+}
+
+.timeline-p {
+    display: inline-block;
+    width: 3%;
+    text-align: left;
+    margin-left: 6px;
+    width: 20px;
+    height: 25px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+}
+
+.timeline-text {
+    display: inline-block;
+    width: 43%;
+    text-align: left;
+    background: #009688;
+    color: white;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    margin-left: 20px;
+}
+
+.timeline-text::before {
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    height: 0;
+    width: 0;
+    content: '';
+    border: 10px solid rgba(255, 255, 255, 0.00);
+    border-top: 6px solid rgba(255, 255, 255, 0.00);
+    border-bottom: 6px solid rgba(255, 255, 255, 0.00);
+    border-right-color: #009688;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+.timeline-end {
+    margin-left: 251px;
+    margin-top: 171px;
+}
+
+@media (min-width:768px) {
+    .nav-child {
+        background: #fff;
+        font-size: 20px;
+        border-bottom: 1px solid #5FB878;
+        margin-bottom: 15px;
+        line-height: 40px;
+        height: 40px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+}

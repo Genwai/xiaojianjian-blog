@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- 本页样式表 -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/artical.css">
 
 </head>
 
@@ -34,11 +34,11 @@
 
             <!-- 导航菜单nav -->
             <ul class="layui-nav" lay-filter="nav">
-                <li class="layui-nav-item layui-this">
+                <li class="layui-nav-item ">
                     <a href="index.html">
                         <i class="fa fa-home fa-fw"></i>&nbsp;网站首页</a>
                 </li>
-                <li class="layui-nav-item">
+                <li class="layui-nav-item layui-this">
                     <a href="artical.html">
                         <i class="fa fa-file-text fa-fw"></i>&nbsp;文章专栏</a>
                 </li>
@@ -60,9 +60,9 @@
     </nav>
     <!-- 主体 -->
     <div class="blog-body" style="margin-top:75px !important;">
-        <blockquote class="layui-elem-quote">
+        <blockquote class="layui-elem-quote shadows">
             <span class="layui-breadcrumb">
-                <a href="">网站首页</a>
+                <a href="index.html" style="color:black" >网站首页</a>
                 <a><cite>文章专栏</cite></a>
               </span>
         </blockquote>
@@ -239,33 +239,30 @@
 
                 <!-- 右边小栏目 -->
                 <div class="blog-main-right ">
-                    <!-- 小编信息 -->
-                    <div class="blogerinfo animated shadow bounceInRight">
-                        <div class="bloger-figuer">
-                            <img src="images/user/0.jpg" alt="">
-                        </div>
-                        <p class="blogerinfo-name">xiaojianjian</p>
-                        <p class="blog-intruduce">一枚90后程序员，前端开发工程师</p>
-                        <p class="blog-location">
-                            <i class="fa fa-location-arrow"></i> 中国 - 福建
-                        </p>
-                        <hr>
-                        <div class="blogerinfo-contact">
-                            <a target="_blank" title="QQ交流" href="#">
-                                <i class="fa fa-qq fa-2x"></i>
-                            </a>
-                            <a target="_blank" title="给我写信" href="#">
-                                <i class="fa fa-envelope fa-2x"></i>
-                            </a>
-                            <a target="_blank" title="新浪微博" href="#">
-                                <i class="fa fa-weibo fa-2x"></i>
-                            </a>
-                            <a target="_blank" title="GitHub" href="https://github.com/Genwai">
-                                <i class="fa fa-git fa-2x"></i>
-                            </a>
-                        </div>
+                    <!-- 搜索 -->
+                    <div class="blogerSearch animated  bounceInRight">
+                        <form class="layui-form" action="">
+                            <div class="search-keywords shadows">
+                                <input type="text" name="" placeholder="请输入关键词搜索" class="layui-input layui-input-style">
+                            </div>
+                            <div class="search-submit shadows">
+                                <a class="search-btn" lay-submit lay-filter="formDemo">
+                                    <span class="layui-icon layui-icon-searchs">&#xe615;</span>
+                                </a>
 
-
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 个性签名 -->
+                    <div class="artical-category bounceIn shadow">
+                        <div class="artical-category-title">
+                            分类导航
+                        </div>
+                        <div class="artical-category-context">
+                            <a>杂文随笔</a>
+                            <a>Web前端</a>
+                        </div>
+                        <div class="clear"></div>
 
                     </div>
                     <!-- 热文推荐/点击排行 -->
@@ -341,16 +338,7 @@
 
                     </div>
 
-                    <!-- 个性签名 -->
-                    <div class="blog-module bounceIn shadow">
-                        <div class="blog-module-title">
-                            <i class="fa fa-file-text-o"></i> &nbsp;个性签名
-                        </div>
-                        <p>
-                            软件最大的好处，就是让一切变得简单。但是，做到这一点的方法，是正确设置缺省值，而不是限制用户的选择。 --Paul Graham
 
-                        </p>
-                    </div>
 
                 </div>
 
@@ -389,7 +377,7 @@
 
 
     <!-- 音乐播放器 -->
-    <div id="QPlayer">
+    <!-- <div id="QPlayer">
         <ol id="playlist"></ol>
         <div id="pContent">
             <div id="player">
@@ -417,11 +405,11 @@
                 <div class="adf"></div>
             </div>
         </div>
-    </div>
-    <div id="tooltipArea"></div><span class="tooltiptext"></span>
-    <div id="root"></div>
+    </div> -->
+    <!-- <div id="tooltipArea"></div><span class="tooltiptext"></span>
+    <div id="root"></div> -->
     <!-- 天气预报 -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.addEventListener('message', function(event) {
             if (event.data.location) {
                 tpwidget('init', event.data);
@@ -466,7 +454,7 @@
             "hash": "d0c821f458c9fafa09ddacb76acc965c"
         });
         tpwidget('show');
-    </script>
+    </script> -->
 
 
 </body>
