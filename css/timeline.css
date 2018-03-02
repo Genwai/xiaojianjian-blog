@@ -78,6 +78,7 @@
 
 .yearToggle:hover {
     color: #1E9FFF !important;
+    cursor: pointer;
 }
 
 .yearToggle>i {
@@ -92,6 +93,7 @@
 
 .monthToggle:hover {
     color: #FF5722 !important;
+    cursor: pointer;
 }
 
 .monthToggle>i {
