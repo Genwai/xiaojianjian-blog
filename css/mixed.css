@@ -13,7 +13,9 @@
 
 .mixed-pic-box {
     width: 23.5%;
-    background: white
+    background: white;
+    display: inline-block;
+    margin: 5px;
 }
 
 .mixed-pics {
@@ -22,7 +24,8 @@
 
 .mixed-pics img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: 190px;
 }
 
 .mixed-name {
