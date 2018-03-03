@@ -1,6 +1,9 @@
 var picts = {
+    "title": "我的相册", //相册标题
+    "id": "love - you", //相册id
+    "start": 0, //初始显示的图片序号，默认0
     'data': [
-        { "src": 'images/pic/1.jpg', "alt": "盘中餐" },
+        { "src": 'images/pic/1.jpg', "alt": "盘中餐", "pid": 666, "thumb": "images/pic/1.jpg" },
         { "src": "images/pic/2.jpg", "alt": "向日葵" },
         { "src": "images/pic/3.jpg", "alt": "日出" },
         { "src": "images/pic/4.jpg", "alt": "水果拼盘" },
@@ -29,31 +32,37 @@ layui.use('flow', function() {
                     lis.push('<div class="mixed-pic-box shadow animated zoomIn"> ' +
                         '<div class = "mixed-pics" >' +
                         '<a >' +
-                        '<img src = "images/pic/0.jpg" alt = "" srcset = "" > </a> </div > <p class = "mixed-name" >' +
+                        '<img src = "images/pic/0.jpg" alt = ""  > </a> </div > <p class = "mixed-name" >' +
                         '最后一张是为空哦 </p> <hr> <div class = "mixed-btns" > <span class = "layui-btn layui-btn-primary layui-btn-xs" ><i class = "fa fa-eye fa-fw" > </i>查看 </span > <span class = "layui-btn layui-btn-primary layui-btn-xs" >' +
                         '<i class = "fa fa-download fa-fw" > </i>下载 </span > </div></div > ');
                 } else {
                     lis.push('<div class="mixed-pic-box shadow animated zoomIn"> ' +
                         '<div class = "mixed-pics" >' +
-                        '<a href="javascript:view('+ count+')">' +
-                        '<img src = "' + picts.data[count].src + '" layer-src="' + picts.data[count].src + '" alt = "' + picts.data[count].alt + '" srcset = "" > </a> </div > <p class = "mixed-name" >' +
+                        '<a id="aa" >' +
+                        '<img src = "' + picts.data[count].src + '" layer-src="' + picts.data[count].src + '" alt = "' + picts.data[count].alt + '" layer-index =1 > </a> </div > <p class = "mixed-name" >' +
                         picts.data[count].alt + '</p> <hr> <div class = "mixed-btns" > <span class = "layui-btn layui-btn-primary layui-btn-xs" > <i class = "fa fa-eye fa-fw" ></i>查看 </span > <span class = "layui-btn layui-btn-primary layui-btn-xs" >' +
                         '<i class = "fa fa-download fa-fw" > </i>下载 </span > </div></div > ');
                 }
                 count--;
             }
 
-            next(lis.join(''), page < picts.data.length/8);
+            next(lis.join(''), page < picts.data.length / 8);
 
         }
     });
 
-    function view() {
-        layer.photos({
-            photos: '.mixed-pics>a'
-            ,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
-          }); 
-      }
+    layer.photos({
+        photos: '#aa',
+        anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+    });
+
+    // function view(start) {
+    //     picts.start = start;
+    //     layer.photos({
+    //         photos: '.aa',
+    //         anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+    //     });
+    // }
 
 
 });
