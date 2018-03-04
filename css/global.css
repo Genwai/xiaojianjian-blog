@@ -588,6 +588,8 @@
             bottom: 5.5%;
             opacity: 0.9;
         }
+
+        
         
         .blog-bgs a {
             display: inline-block;
@@ -613,4 +615,19 @@
         
         .blog-bgs .bds_sqq {
             background: url(../images/qq_32.png) no-repeat;
+        }
+        .nav-user {
+            display: inline-block;
+            color: white;
+            float: right;
+            padding: 20px;
+            font-size: 16px;
+
+        }
+        .nav-user i {
+            font-size: 30px;
+            margin-right: 8px;
+        }
+        .nav-user span {
+            cursor: pointer;
         }

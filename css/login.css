@@ -1,0 +1,8 @@
+.layui-input {
+    width: 200px;
+    display: inline-block;
+}
+.layui-form-mid {
+    float: none;
+    display: inline-block;
+}

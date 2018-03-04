@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>xiaojianjian个人博客</title>
+    <!-- layui -->
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <!-- global css -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- 本页样式表 -->
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+    
+   <div class="login-register">
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+        <ul class="layui-tab-title">
+          <li class="layui-this">登陆</li>
+          <li>注册</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                      <label class="layui-form-label">邮箱</label>
+                      <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="请输入邮箱"  class="layui-input">
+                      </div>
+                    </div>
+                    <div class="layui-form-item">
+                      <label class="layui-form-label">密码</label>
+                      <div class="layui-input-inline">
+                        <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                      </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">人类验证</label>
+                        <div class="layui-input-block">
+                          <input type="text" name="title" required  lay-verify="required" placeholder="请输入后面的算术"  class="layui-input">
+                          <div class="layui-form-mid layui-word-aux">1+99？</div>
+                       
+                      </div>
+                      </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                          <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                          <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                      </div>
+                </form>
+                
+
+
+            </div>
+            <div class="layui-tab-item">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                      <label class="layui-form-label">邮箱</label>
+                      <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="请输入邮箱"  class="layui-input">
+                        <div class="layui-form-mid layui-word-aux">（这是登陆账号哦）</div>
+                     
+                    </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">昵称</label>
+                        <div class="layui-input-block">
+                          <input type="text" name="title" required  lay-verify="required" placeholder="请输入你想要的昵称"  class="layui-input">
+                       
+                      </div>
+                      </div>
+                    <div class="layui-form-item">
+                      <label class="layui-form-label">密码</label>
+                      <div class="layui-input-inline">
+                        <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                      </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">确认密码</label>
+                        <div class="layui-input-inline">
+                          <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                        </div>
+                      </div>
+                      <div class="layui-form-item">
+                        <label class="layui-form-label">人类验证</label>
+                        <div class="layui-input-block">
+                          <input type="text" name="title" required  lay-verify="required" placeholder="请输入后面的算术"  class="layui-input">
+                          <div class="layui-form-mid layui-word-aux">1+99？</div>
+                       
+                      </div>
+                      </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                          <button class="layui-btn" lay-submit lay-filter="formDemo">立即注册</button>
+                          <!-- <button type="reset" class="layui-btn layui-btn-primary">重置</button> -->
+                        </div>
+                      </div>
+                </form>
+
+            </div>
+        </div>
+      </div> 
+   </div>
+
+</body>
+<!-- layui.js -->
+<script src="layui/layui.js"></script>
+<!-- 全局脚本 -->
+<script src="js/global.js"></script>
+<script src="js/canvas-particle.js"></script>
+<!-- 本页脚本 -->
+<script src="js/mixed.js"></script>
+<!-- 音乐播放器 -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
+<script src="js/player.js"></script>
+
+
+</html>

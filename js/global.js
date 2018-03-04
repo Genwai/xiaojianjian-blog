@@ -16,6 +16,14 @@ layui.use(["element", "layer", "util", "form"], function() {
     //     }
     // });
 
+    $('.nav-login').click(function () {
+        layer.open({
+            title: '登陆',
+            type:2,
+            content: './login.html'
+        })
+    })
+
     $(".layui-fixbar-i").click(function() {
         if ($(".blog-share").hasClass("layui-hide")) {
             shareIn();

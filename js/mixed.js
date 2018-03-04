@@ -12,7 +12,7 @@ var picts = {
     ]
 }
 
-layui.use('flow', function() {
+layui.use(['flow','layer','jquery'], function() {
     var $ = layui.jquery; //不用额外加载jQuery，flow模块本身是有依赖jQuery的，直接用即可。
     var flow = layui.flow;
     var count = picts.data.length - 1;
@@ -38,10 +38,10 @@ layui.use('flow', function() {
                 } else {
                     lis.push('<div class="mixed-pic-box shadow animated zoomIn"> ' +
                         '<div class = "mixed-pics" >' +
-                        '<a id="aa" >' +
+                        '<a class="aa" >' +
                         '<img src = "' + picts.data[count].src + '" layer-src="' + picts.data[count].src + '" alt = "' + picts.data[count].alt + '" layer-index =1 > </a> </div > <p class = "mixed-name" >' +
-                        picts.data[count].alt + '</p> <hr> <div class = "mixed-btns" > <span class = "layui-btn layui-btn-primary layui-btn-xs" > <i class = "fa fa-eye fa-fw" ></i>查看 </span > <span class = "layui-btn layui-btn-primary layui-btn-xs" >' +
-                        '<i class = "fa fa-download fa-fw" > </i>下载 </span > </div></div > ');
+                        picts.data[count].alt + '</p> <hr> <div class = "mixed-btns" > <span class = "layui-btn layui-btn-primary layui-btn-xs" > <i class = "fa fa-eye fa-fw" ></i><a class="photo-span" href="javascript:views('+ count +')">查看</a> </span > <span class = "layui-btn layui-btn-primary layui-btn-xs" >' +
+                        '<i class = "fa fa-download fa-fw" ></i><a class="photo-span">下载</a></span > </div></div > ');
                 }
                 count--;
             }
@@ -52,9 +52,11 @@ layui.use('flow', function() {
     });
 
     layer.photos({
-        photos: '#aa',
+        photos: '.aa',
         anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
     });
+
+
 
     // function view(start) {
     //     picts.start = start;
@@ -66,3 +68,10 @@ layui.use('flow', function() {
 
 
 });
+function views(params) {
+    picts.start = params;
+    layer.photos({
+        photos: '.aa',
+        anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+    });
+}
