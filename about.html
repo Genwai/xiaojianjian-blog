@@ -55,7 +55,12 @@
                         <i class="fa fa-info fa-fw"></i>&nbsp;关于本站</a>
                 </li>
             </ul>
-
+            <!-- 用户登陆 -->
+            <div class="nav-user">
+                <i class="fa fa-user-circle-o"></i>
+                <span class="nav-login">登陆</span>
+                <span class="nav-register">注册</span>
+            </div>
         </div>
     </nav>
     <!-- 主体 -->
@@ -78,7 +83,7 @@
                         <li>友情链接</li>
                     </ul>
                     <div class="layui-tab-content">
-                        <div class="layui-tab-item layui-show">
+                        <div class="layui-tab-item ">
                             <div class="aboutinfo-figure">
                                 <img src="images/logo.png" alt="">
                             </div>
@@ -160,7 +165,7 @@
                                 <h1 style="text-align:center;margin-top:15px;">END</h1>
                             </fieldset>
                         </div>
-                        <div class="layui-tab-item ">
+                        <div class="layui-tab-item layui-show">
                             <div class="aboutinfo-figure">
                                 <img src="images/messagewall.png" alt="">
                             </div>
@@ -178,9 +183,46 @@
                             <fieldset>
                                 <legend>Leave a message</legend>
                                 <div class="layui-field-box aboutinfo-abstract">
+                                    <div class="layui-form">
+                                        <div class="layui-form-item">
+                                            <textarea id="layui-edit" class="layui-textarea" placeholder="请输入留言"></textarea>
 
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <div class="layui-input-block">
+                                                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                                                <!-- <button type="reset" class="layui-btn layui-btn-primary">重置</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <img src="images/user/7.jpg" alt="用户头像" class="about-user-img">
+                                            <div class="about-user-name">
+                                                紫怡
+                                            </div>
+                                            <div class="about-user-content">
+                                                模板挺好看的，我很喜欢可以分享模板吗?
+                                            </div>
+                                            <p class="about-user-time">
+                                                <i class="fa fa-clock-o"></i>
+                                                <span class="about-user-comitTime">2017-11-14 16:13:53</span>
+                                                <span class="about-user-zan">
+                                                    <img src="images/zan.png" alt="" srcset="">
+                                                    81
+                                                </span>
+                                                <span class="about-user-huifu">
+                                                    <img src="images/huifu.png" alt="" srcset="">
+                                                    回复
+                                                </span>
+                                            </p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </fieldset>
+
+
                         </div>
 
 

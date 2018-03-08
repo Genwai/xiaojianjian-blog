@@ -16,13 +16,16 @@ layui.use(["element", "layer", "util", "form"], function() {
     //     }
     // });
 
-    $('.nav-login').click(function () {
+    $('.nav-login,.nav-register').click(function() {
         layer.open({
             title: '登陆',
-            type:2,
-            content: './login.html'
+            type: 2,
+            content: './login.html',
+            area: ['666px', '450px'], //显示宽高
+            maxmin: true, //最大最小化
         })
     })
+
 
     $(".layui-fixbar-i").click(function() {
         if ($(".blog-share").hasClass("layui-hide")) {

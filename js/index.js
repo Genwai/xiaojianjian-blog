@@ -11,8 +11,8 @@ layui.use(['jquery', 'carousel'], function() {
             ,
         height: '360px',
         indicator: 'inside',
-        arrow: 'always' //始终显示箭头
-            ,
+        arrow: 'always', //始终显示箭头
+
         anim: 'default' //切换动画方式
 
     });
