@@ -3,12 +3,16 @@
     padding: 8px;
 }
 
-.layui-breadcrumb a cite {}
+.article-title a {
+    cursor: pointer;
+}
 
 .block-index:hover {
     color: #1E9FFF;
 }
-
+.artical-hot-click li {
+    padding: 2px;
+}
 .shadows {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
 }

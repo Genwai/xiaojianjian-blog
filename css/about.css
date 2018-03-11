@@ -1,3 +1,4 @@
+/* css 写的时候要备注是哪一块，在复用的时候也比较方便 */
 .layui-tab-title {
     border-bottom: 1px solid #5FB878;
     text-align: center;
@@ -10,7 +11,7 @@
 .aboutinfor-intruduce {
     margin: 20px auto;
     text-align: center;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 .aboutinfo-contact {
@@ -47,7 +48,7 @@ fieldset legend {
 
 .aboutinfo-abstract p {
     font-size: 16px;
-    text-indent: 2em;
+    /* text-indent: 2em; */
 }
 
 .aboutinfo-figure img {
@@ -70,18 +71,28 @@ fieldset legend {
 
 .about-user-name,
 .about-user-content,
-.about-user-time {
+.about-user-time,
+.comment-parent hr {
     margin-left: 68px;
 }
+.about-parent-hr ,
+.comment-child {
+    margin-left: 68px;
+}
+.about-user-content {
+    height: 40px;
+}
 
-.about-user-name {
+.about-user-name
+,.about-child-name {
     font-size: 16px;
     /* margin-left: 2px; */
     padding: 5px 4px 4px 0px;
     color: #1E9FFF;
 }
 
-.about-user-conten {
+.about-user-conten
+ {
     /* padding: 4px; */
     font-size: 14px;
     text-indent: 1em;
@@ -90,9 +101,35 @@ fieldset legend {
 
 .about-user-comitTime {
     font-size: 14px;
+    margin-right: 10%;
+}
+
+.about-user-zan {
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+.about-user-huifu {
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .about-user-zan img,
 .about-user-huifu img {
     width: 16px;
+    vertical-align: 0px;
+}
+.about-child-name ,
+ .about-info {
+    display: inline-block;
+    text-indent: 1em;
+}
+.blog-about-commit li:first-child {
+    border-top: 1px dotted #01AAED ;
+
+}
+.blog-about-commit li {
+    border-bottom:  1px dotted #01AAED ;
+    padding: 15px 0 10px 0;
 }

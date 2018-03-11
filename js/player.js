@@ -198,10 +198,10 @@
 		$('.musicTag').html('<strong>'+item.title+'</strong><span> - </span><span class="artist">'+item.artist+'</span>');
 		$('#playlist li').removeClass('playing').eq(i).addClass('playing');
 		audio = newaudio[0];
-		audio.addEventListener('progress', beforeLoad, false);
-		audio.addEventListener('durationchange', beforeLoad, false);
-		audio.addEventListener('canplay', afterLoad, false);
-		audio.addEventListener('ended', ended, false);
+		// audio.addEventListener('progress', beforeLoad, false);
+		// audio.addEventListener('durationchange', beforeLoad, false);
+		// audio.addEventListener('canplay', afterLoad, false);
+		// audio.addEventListener('ended', ended, false);
 	}
 
 	loadMusic(currentTrack);

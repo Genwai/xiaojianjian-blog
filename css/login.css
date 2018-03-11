@@ -6,3 +6,16 @@
     float: none;
     display: inline-block;
 }
+.login-login ,.login-register {
+    position: relative;
+}
+.login-login .layui-form {
+    position: absolute;
+    top: 0;
+    right: 22%;
+}
+.login-login-register .layui-form {
+    position: absolute;
+    top: 14%;
+    right: 9%;
+}
