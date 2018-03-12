@@ -82,8 +82,7 @@
                 <div class="blog-main-left animated slideInLeft ">
                     <div class="detail-about shadow artical-detail">
                         <div class="detail-title">
-                            <i class="layui-icon">&#xe609;</i>
-                            终于等来了,xiaojianjian博客v1.0!
+                            <i class="layui-icon">&#xe609;</i> 终于等来了,xiaojianjian博客v1.0!
                         </div>
                         <div class="detail-info">
                             <span>编辑时间：2018-03-10 12:20:20 </span>
@@ -104,8 +103,7 @@
                             </p>
                             <p>
 
-                                目前这个v0.1版本，是纯前端组成，还没有涉及后端。中间有段时间一直在想如果数据太多了，用纯前端是不是我这布局会有问题，页面会不会变形，并且自己花了一天时间 也搭了一个带后台的项目，后台是java实现的，使用了一个spring boot框架，感觉修改一些页面样式，太麻烦了，每次都得重启服务，想想第一版，应该不会有太多数
-                                据吧!就又用回到VScode，使用纯前端编辑项目。中间来来回回，自己纠结了好几次，不过最终还是拿这个版发布了。
+                                目前这个v1.0版本，是纯前端组成，我目前是谷歌浏览器开发，没可能没有兼容其他浏览器，和响应式设计，先这样吧！中间来来回回，自己纠结了好几次，不过最终还是拿这个版发布了。
 
                             </p>
                             <br>
@@ -133,7 +131,7 @@
                                     </div>
                                     <div class="layui-form-item">
                                         <div class="layui-input-block">
-                                            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                                            <button class="layui-btn" lay-submit lay-filter="form-commmit-message">提交评论</button>
                                             <!-- <button type="reset" class="layui-btn layui-btn-primary">重置</button> -->
                                         </div>
                                     </div>
@@ -144,19 +142,16 @@
                                         <div class="comment-parent">
                                             <img src="images/user/7.jpg" alt="用户头像" class="about-user-img">
                                             <div class="about-user-name">
-                                                紫怡
+                                                郭富城
                                             </div>
                                             <div class="about-user-content">
-                                                模板挺好看的，我很喜欢可以分享模板吗?
+                                                模板挺好看的，我很喜欢!
                                             </div>
                                             <p class="about-user-time">
                                                 <i class="fa fa-clock-o"></i>
                                                 <span class="about-user-comitTime">2017-11-14 16:13:53</span>
-
                                                 <a href="javascript:;" class="prase" total="0">0</a>
-                                                <span class="about-user-huifu">
-                                                    <img src="images/huifu.png" alt="" srcset=""> 回复
-                                                </span>
+                                                <span class="about-user-huifu"><img src="images/huifu.png" alt="" >回复</span>
                                             </p>
                                         </div>
                                         <hr class="about-parent-hr">
@@ -166,19 +161,28 @@
                                                 xiaojianjian
                                             </div>
                                             <div class="about-info">
-                                                模板挺好看的，我很喜欢可以分享模板吗?
+                                                模板挺好看的，我很喜欢!
                                             </div>
                                             <p class="about-user-time">
                                                 <i class="fa fa-clock-o"></i>
                                                 <span class="about-user-comitTime">2017-11-14 16:13:53</span>
-                                                <span class="about-user-zan">
-                                                    <img src="images/zan.png" alt="" srcset=""> 81
-                                                </span>
-                                                <span class="about-user-huifu">
-                                                    <img src="images/huifu.png" alt="" srcset=""> 回复
-                                                </span>
+                                                <a href="javascript:;" class="prase" total="0">0</a>
+                                                <!-- <span class="about-user-huifu"><img src="images/huifu.png" alt="" srcset="">回复</span> -->
                                             </p>
                                             <hr style="margin-left:65px;">
+                                        </div>
+                                        <div class="detail-replay-box layui-hide">
+                                            <form class="layui-form">
+
+                                                <div class="layui-input-block">
+                                                    <textarea name="desc" id="replay" placeholder="请输入回复内容" class="layui-textarea fuck"></textarea>
+                                                    <div class="layui-form-btns">
+                                                        <button class="layui-btn layui-btn-xs" lay-submit lay-filter="formReplay">提交</button>
+                                                    </div>
+                                                </div>
+
+
+                                            </form>
                                         </div>
                                     </li>
                                 </ul>
@@ -340,5 +344,7 @@
 <script src="js/jquery.marquee.min.js"></script>
 <script src="js/player.js"></script>
 
+<!-- 当前时间 -->
+<script src="js/moment.min.js"></script>
 
 </html>
