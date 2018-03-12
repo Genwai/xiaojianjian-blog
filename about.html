@@ -105,7 +105,7 @@
                             </div>
                             <fieldset>
                                 <legend>简介</legend>
-                                <div class="layui-field-box aboutinfo-abstract">
+                                <div class="layui-field-box aboutinfo-abstract about-info-text">
                                     <p class="about-p">
                                         xiaojianjian博客是一个由WEB前端开发的个人博客网站，诞生于2018年03月，迄今为止经历了几次小改，暂且称为xiaojianjian博客1.0。
                                     </p>
@@ -145,7 +145,7 @@
                             </div>
                             <fieldset>
                                 <legend>简介</legend>
-                                <div class="layui-field-box aboutinfo-abstract">
+                                <div class="layui-field-box aboutinfo-abstract about-info-text">
                                     <p class="about-p">
                                         xiaojianjian,福建莆田人，前端菜鸟一只。
                                     </p>
@@ -190,7 +190,7 @@
                                         </div>
                                         <div class="layui-form-item">
                                             <div class="layui-input-block">
-                                                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                                                <button class="layui-btn" lay-submit lay-filter="form-commmit-message">立即提交</button>
                                                 <!-- <button type="reset" class="layui-btn layui-btn-primary">重置</button> -->
                                             </div>
                                         </div>
@@ -198,50 +198,51 @@
 
                                     <ul class="blog-about-commit">
                                         <li>
-                                           <div class="comment-parent">
-                                            <img src="images/user/7.jpg" alt="用户头像" class="about-user-img">
-                                            <div class="about-user-name">
-                                                紫怡
+                                            <div class="comment-parent">
+                                                <img src="images/user/7.jpg" alt="用户头像" class="about-user-img">
+                                                <div class="about-user-name">
+                                                    郭富城
+                                                </div>
+                                                <div class="about-user-content">
+                                                    模板挺好看的，我很喜欢!
+                                                </div>
+                                                <p class="about-user-time">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <span class="about-user-comitTime">2017-11-14 16:13:53</span>
+                                                    <a href="javascript:;" class="prase" total="0">0</a>
+                                                    <span class="about-user-huifu"><img src="images/huifu.png" alt="" >回复</span>
+                                                </p>
                                             </div>
-                                            <div class="about-user-content">
-                                                模板挺好看的，我很喜欢可以分享模板吗?
+                                            <hr class="about-parent-hr">
+                                            <div class="comment-child">
+                                                <img src="images/user/6.jpg" alt="用户头像" class="about-user-img">
+                                                <div class="about-child-name">
+                                                    xiaojianjian
+                                                </div>
+                                                <div class="about-info">
+                                                    模板挺好看的，我很喜欢!
+                                                </div>
+                                                <p class="about-user-time">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <span class="about-user-comitTime">2017-11-14 16:13:53</span>
+                                                    <a href="javascript:;" class="prase" total="0">0</a>
+                                                    <!-- <span class="about-user-huifu"><img src="images/huifu.png" alt="" srcset="">回复</span> -->
+                                                </p>
+                                                <hr style="margin-left:65px;">
                                             </div>
-                                            <p class="about-user-time">
-                                                <i class="fa fa-clock-o"></i>
-                                                <span class="about-user-comitTime">2017-11-14 16:13:53</span>
-                                                <span class="about-user-zan">
-                                                    <img src="images/zan.png" alt="" srcset="">
-                                                    81
-                                                </span>
-                                                <span class="about-user-huifu">
-                                                    <img src="images/huifu.png" alt="" srcset="">
-                                                    回复
-                                                </span>
-                                            </p>
-                                           </div>
-                                           <hr class="about-parent-hr">
-                                           <div class="comment-child">
-                                            <img src="images/user/6.jpg" alt="用户头像" class="about-user-img">
-                                            <div class="about-child-name">
-                                                xiaojianjian
+                                            <div class="detail-replay-box layui-hide">
+                                                <form class="layui-form">
+    
+                                                    <div class="layui-input-block">
+                                                        <textarea name="desc" id="replay" placeholder="请输入回复内容" class="layui-textarea fuck"></textarea>
+                                                        <div class="layui-form-btns">
+                                                            <button class="layui-btn layui-btn-xs" lay-submit lay-filter="formReplay">提交</button>
+                                                        </div>
+                                                    </div>
+    
+    
+                                                </form>
                                             </div>
-                                            <div class="about-info">
-                                                模板挺好看的，我很喜欢可以分享模板吗?
-                                            </div>
-                                            <p class="about-user-time">
-                                                <i class="fa fa-clock-o"></i>
-                                                <span class="about-user-comitTime">2017-11-14 16:13:53</span>
-                                                <span class="about-user-zan">
-                                                    <img src="images/zan.png" alt="" srcset="">
-                                                    81
-                                                </span>
-                                                <span class="about-user-huifu">
-                                                    <img src="images/huifu.png" alt="" srcset="">
-                                                    回复
-                                                </span>
-                                            </p>
-                                            <hr style="margin-left:65px;">
-                                           </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -298,7 +299,7 @@
 
 
     <!-- 音乐播放器 -->
-    <!-- <div id="QPlayer">
+    <div id="QPlayer">
         <ol id="playlist"></ol>
         <div id="pContent">
             <div id="player">
@@ -326,7 +327,7 @@
                 <div class="adf"></div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- <div id="tooltipArea"></div><span class="tooltiptext"></span>
     <div id="root"></div> -->
     <!-- 天气预报 -->
@@ -386,10 +387,13 @@
 <script src="js/canvas-particle.js"></script>
 <!-- 本页脚本 -->
 <script src="js/about.js"></script>
+<!-- <script src="js/detail.js"></script> -->
 <!-- 音乐播放器 -->
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.marquee.min.js"></script>
 <script src="js/player.js"></script>
 
+<!-- 当前时间 -->
+<script src="js/moment.min.js"></script>
 
 </html>
