@@ -22,7 +22,7 @@ layui.use(["element", "layer", "util", "form"], function() {
             type: 2,
             content: './login.html',
             area: ['666px', '450px'], //显示宽高
-            maxmin: true, //最大最小化
+            // maxmin: true, //最大最小化
         })
     })
 
